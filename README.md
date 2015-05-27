@@ -9,6 +9,7 @@
     * [Manually Using GIT](#using-git)
 4. [Usage](#usage)
     * [Adding Users](#adding-users)
+    * [Adding add't ssh keys to a user)
     * [Removing Users](#removing-users)
     * [Start the System](#main-call)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -40,9 +41,6 @@ servers.  The primary motivations behind this module are:
 
 Copy the module into your /etc/puppet/modules directory.
 
-### Using Puppet (Native Command)
-
-    puppet module install duxklr-manageusers
 
 ### Using GIT
 
@@ -84,6 +82,32 @@ add user accounts (similar to this):
         sshkey     => "MyKeyWouldGoHere"
       }
     }
+
+### Adding add't ssh keys to a user
+
+Once you add the inital key with create_account to add an add't ssh keys to the user you setup one per key see below:
+You can add the inital key when you create the user see above!
+
+manageusers::create_sshkeys{ "user1":
+   user  => 'user',
+   sshkeytype => 'ssh-rsa',
+   sshkey =>  'yourpublickeyhere'
+   sshdomain => 'root@staging.yourdomain.com',
+
+
+}
+
+manageusers::create_sshkeys{ "user2":
+   user  => 'user',
+   sshkeytype => 'ssh-rsa',
+   sshkey =>  'yourpublickeyhere'
+   sshdomain => 'root@archbuild.yourdomain.com',
+
+
+}
+
+Notice I had to put a 1 and 2 on each of the names.  They can not be the same they have to be different!
+
 
 ### Removing Users
 
