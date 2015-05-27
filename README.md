@@ -9,7 +9,7 @@
     * [Manually Using GIT](#using-git)
 4. [Usage](#usage)
     * [Adding Users](#adding-users)
-    * [Adding add't ssh keys to a user)(#Adding-add't-ssh-keys-to-a-user)
+    * [Adding add't ssh keys to a user](#Adding-add't-ssh-keys-to-a-user)
     * [Removing Users](#removing-users)
     * [Start the System](#main-call)
 5. [Limitations - OS compatibility, etc.](#limitations)
