@@ -9,7 +9,7 @@
     * [Manually Using GIT](#using-git)
 4. [Usage](#usage)
     * [Adding Users](#adding-users)
-    * [Adding add't ssh keys to a user](#Adding-add't-ssh-keys-to-a-user)
+    * [Adding additional ssh keys to a user](#Adding-additional-ssh-keys-to-a-user)
     * [Removing Users](#removing-users)
     * [Start the System](#main-call)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -83,7 +83,7 @@ add user accounts (similar to this):
       }
     }
 
-### Adding add't ssh keys to a user
+### Adding additional ssh keys to a user
 
 Once you add the inital key with create_account to add an add't ssh keys to the user you setup one per key see below:
 You can add the inital key when you create the user see above!
