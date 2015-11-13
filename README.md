@@ -45,7 +45,7 @@ Copy the module into your /etc/puppet/modules directory.
 ### Using GIT
 
     cd /etc/puppet/modules
-    git clone git@github.com:duxklr/manageusers.git
+    git clone git@github.com:hesterd/manageusers.git
 
 
 ## Usage
@@ -135,5 +135,5 @@ Tested and known to work with Ubuntu (10.x, 12.x, 14.x) and RedHat (5.x, 6.x).
 
 ## Development
 
-Comments, suggestions, and code can be found here: https://github.com/duxklr/manageusers
+Comments, suggestions, and code can be found here: https://github.com/hesterd/manageusers
 
